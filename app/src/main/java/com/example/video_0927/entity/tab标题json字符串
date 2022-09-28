@@ -1,0 +1,46 @@
+请求方式：get
+参数：catcher
+{
+    "msg": "success",
+    "code": 0,
+    "page": {
+        "totalCount": 8,
+        "pageSize": 10,
+        "totalPage": 1,
+        "currPage": 1,
+        "list": [
+            {
+                "categoryId": 1,
+                "categoryName": "游戏"
+            },
+            {
+                "categoryId": 2,
+                "categoryName": "音乐"
+            },
+            {
+                "categoryId": 3,
+                "categoryName": "美食"
+            },
+            {
+                "categoryId": 4,
+                "categoryName": "农人"
+            },
+            {
+                "categoryId": 5,
+                "categoryName": "vlog"
+            },
+            {
+                "categoryId": 6,
+                "categoryName": "搞笑"
+            },
+            {
+                "categoryId": 7,
+                "categoryName": "宠物"
+            },
+            {
+                "categoryId": 8,
+                "categoryName": "军事"
+            }
+        ]
+    }
+}

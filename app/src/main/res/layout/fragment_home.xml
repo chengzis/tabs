@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#344261"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="搜索你喜欢的视频"
+            android:textColor="#737373"
+            android:background="@drawable/bg_et_search"
+            android:drawableStart="@mipmap/icon_search"
+            android:drawablePadding="11dp"
+            android:textSize="15sp"
+            android:paddingHorizontal="13dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center_vertical"
+            android:paddingVertical="10dp"/>
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tl_textsize="16sp"
+            app:tl_indicator_color="#fdf299"
+            app:tl_indicator_corner_radius="1.5dp"
+            app:tl_indicator_height="3dp"
+            app:tl_indicator_width="17dp"
+            app:tl_textSelectColor="#fdf299"
+            app:tl_textUnselectColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

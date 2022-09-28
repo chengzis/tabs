@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="42dp"
+            android:layout_height="42dp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_header"
+            android:layout_marginStart="11dp"
+            android:textColor="#242424"
+            tools:text="韭菜盒子新做法，不发面不烫面"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/iv_header"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="4dp"
+            tools:text="大胃王"
+            android:textColor="#9f9f9f"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/player_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/black"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <xyz.doikki.videocontroller.component.PrepareView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="6dp"
+            android:scaleType="centerCrop"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/comment"/>
+
+            <TextView
+                android:id="@+id/tv_comment_count"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="5dp"
+                android:text="123"
+                android:textColor="#161616"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_collect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/collect"/>
+
+            <TextView
+                android:id="@+id/tv_collect_count"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="5dp"
+                android:text="123"
+                android:textColor="#161616"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_dianzan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                tools:src="@mipmap/dianzan"/>
+
+            <TextView
+                android:id="@+id/tv_dianzan_count"
+                android:layout_width="25dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="5dp"
+                android:text="123"
+                android:textColor="#161616"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
